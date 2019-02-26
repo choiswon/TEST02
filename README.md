@@ -1,3 +1,5 @@
 Spring Boot App
+
 Arguments -> VM arguments
--Dspring.prfiles.active=log-windows,log-file,log-console,log-jdbc
+
+-Dspring.profiles.active=log-windows,log-file,log-console,log-jdbc
