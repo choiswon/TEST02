@@ -1,0 +1,27 @@
+spring.mvc.view.prefix: /WEB-INF/jsp/
+spring.mvc.view.suffix: .jsp
+
+restTemplate:
+  factory:
+    readTimeout: 5000 
+    connectTimeout: 3000
+  httpClient:
+    maxConnTotal: 100
+    maxConnPerRoute: 5
+
+logging:
+  path: d:/log/spring
+  file: log-file
+  
+---
+spring:
+  profiles: log-windows
+  
+logging:
+  path: d:/log/spring
+---
+spring:
+  profiles: log-linux
+  
+logging:
+  path: /log/spring/
